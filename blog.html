@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education — IRA/401k Gold Retirement Guide</title>
+  <title>Education &#x2014; IRA/401k Gold Retirement Guide</title>
   <meta name="description" content="Plain-English articles to help retirement-age Americans understand gold IRAs, rollovers, and protecting savings from inflation." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,7 +17,25 @@
     nav a:hover { color:var(--gold); }
     .page-hero { background:var(--navy); padding:48px 24px; text-align:center; }
     .page-hero h1 { color:#fff; font-size:clamp(22px,3vw,32px); margin-bottom:10px; }
-    .page-hero p { color:#9a9080; font-style:italic; font-size:16px; }
+    .page-hero p { color:#9a9080; font-style:italic; font-size:16px; margin-bottom:28px; }
+    .rex-cta-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 4px;
+    }
+    .rex-cta-bar a {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 13px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background .15s, transform .15s;
+    }
+    .rex-cta-bar a:hover { background: #b8943f; transform: translateY(-1px); }
     main { max-width:960px; margin:0 auto; padding:56px 24px; }
     .post-card { background:#fff; border:1px solid var(--border); border-left:4px solid var(--gold); border-radius:8px; padding:32px 36px; margin-bottom:28px; }
     .post-card .tag { display:inline-block; background:#f0ebe0; color:var(--muted); font-family:Arial,sans-serif; font-size:11px; font-weight:bold; letter-spacing:.08em; text-transform:uppercase; padding:4px 10px; border-radius:4px; margin-bottom:14px; }
@@ -38,59 +56,48 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Education</a>
-        <a href="#" onclick="document.getElementById('rex-bubble').click();return false;">Talk to Rex</a>
+        <a href="#" onclick="window.chatbase('open'); return false;">Talk to Rex</a>
       </nav>
     </div>
   </header>
+
   <div class="page-hero">
     <h1>Free Education &amp; Guidance</h1>
     <p>Plain-English articles for retirement-age Americans exploring their options.</p>
+    <div class="rex-cta-bar">
+      <a href="#" onclick="window.chatbase('open'); return false;">&#128172; Talk to Rex &mdash; Get Your Free Retirement Checkup</a>
+    </div>
   </div>
+
   <main>
     <div class="post-card">
       <span class="tag">Inflation &amp; Your IRA</span>
       <h2>What Inflation Is Quietly Doing to Your IRA (And What You Can Do About It)</h2>
-      <p>Your account balance looks fine. But the purchasing power behind those dollars is shrinking every year — and most retirement accounts do nothing to protect against it.</p>
+      <p>Your account balance looks fine. But the purchasing power behind those dollars is shrinking every year &mdash; and most retirement accounts do nothing to protect against it.</p>
       <a href="post.html" class="read">Read the full article &rarr;</a>
     </div>
     <div class="post-card coming-soon">
       <span class="tag">Rollovers</span>
       <h2>How to Move a 401(k) to a Gold IRA Without Paying Taxes or Penalties</h2>
-      <p>The step-by-step process for a direct rollover — what it is, how it works, and what to watch out for.</p>
+      <p>The step-by-step process for a direct rollover &mdash; what it is, how it works, and what to watch out for.</p>
       <a href="#" class="read">Coming soon</a>
     </div>
     <div class="post-card coming-soon">
       <span class="tag">Account Types</span>
       <h2>TSP, Pension, Annuity: Which Retirement Accounts Can Roll Into a Gold IRA?</h2>
-      <p>Not all accounts work the same way. Here's a plain-English breakdown of which ones qualify and how.</p>
+      <p>Not all accounts work the same way. Here&rsquo;s a plain-English breakdown of which ones qualify and how.</p>
       <a href="#" class="read">Coming soon</a>
     </div>
   </main>
+
   <footer>
     <p>&copy; 2026 IRA/401k Gold Retirement Guide &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Disclaimer</a></p>
     <p style="margin-top:8px;">This site is for educational purposes only. Nothing here constitutes financial, tax, or legal advice.</p>
   </footer>
+
+  <!-- CHATBASE WIDGET -->
   <script>
-  (function(){
-    var REX_URL="https://app.appy.ai/chat/rex-ira-guide",PRIMARY_COLOR="#C9A84C",DARK_COLOR="#0A1628";
-    var css=`#rex-bubble{position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:${PRIMARY_COLOR};box-shadow:0 4px 18px rgba(0,0,0,.30);cursor:pointer;z-index:99999;display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s;border:none;outline:none;}#rex-bubble:hover{transform:scale(1.08);}#rex-bubble svg{width:28px;height:28px;fill:#fff;pointer-events:none;}#rex-tooltip{position:fixed;bottom:95px;right:28px;background:${DARK_COLOR};color:#fff;font-family:Georgia,serif;font-size:13px;padding:7px 13px;border-radius:7px;white-space:nowrap;z-index:99998;pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity .25s,transform .25s;}#rex-tooltip.visible{opacity:1;transform:translateY(0);}#rex-pulse{position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:${PRIMARY_COLOR};z-index:99997;pointer-events:none;animation:rex-pulse-anim 2s ease-out infinite;}#rex-badge{position:fixed;bottom:72px;right:20px;background:#e53935;color:#fff;width:18px;height:18px;border-radius:50%;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;display:flex;align-items:center;justify-content:center;z-index:100000;pointer-events:none;}@keyframes rex-pulse-anim{0%{transform:scale(1);opacity:.5}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}`;
-    var s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
-    document.body.insertAdjacentHTML('beforeend','<div id="rex-pulse"></div><button id="rex-bubble" aria-label="Talk to Rex"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></button><div id="rex-tooltip">Free retirement checkup</div><div id="rex-badge">1</div>');
-    var bubble=document.getElementById('rex-bubble'),tooltip=document.getElementById('rex-tooltip'),pulse=document.getElementById('rex-pulse'),badge=document.getElementById('rex-badge'),popup=null;
-    setTimeout(function(){tooltip.classList.add('visible');setTimeout(function(){tooltip.classList.remove('visible');},5000);},2500);
-    bubble.addEventListener('mouseenter',function(){tooltip.classList.add('visible');});
-    bubble.addEventListener('mouseleave',function(){tooltip.classList.remove('visible');});
-    bubble.addEventListener('click',function(){
-      tooltip.classList.remove('visible');pulse.style.display='none';badge.style.display='none';
-      if(popup&&!popup.closed){popup.focus();return;}
-      var l=Math.round((screen.width-480)/2),t=Math.round((screen.height-640)/2);
-      popup=window.open(REX_URL,'RexIRAGuide','width=480,height=640,left='+l+',top='+t+',resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no');
-      if(!popup||popup.closed){window.open(REX_URL,'_blank');}
-    });
-  })();
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
-  <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 </body>
 </html>
