@@ -256,7 +256,7 @@
       </a>
       <nav>
         <a href="blog.html">Education</a>
-        <a href="#rex-bubble" onclick="document.getElementById('rex-bubble').click(); return false;">Talk to Rex</a>
+        <a href="#" onclick="window.chatbase('open'); return false;">Talk to Rex</a>
       </nav>
     </div>
   </header>
@@ -265,13 +265,13 @@
   <section class="hero">
     <div class="hero-tag">Free Education &amp; Guidance</div>
     <h1>Protecting Your Retirement Savings Starts With Understanding Your Options</h1>
-    <p>Honest, plain-English guidance for Americans 59½ to 72 who want to know if physical gold belongs in their retirement plan.</p>
+    <p>Honest, plain-English guidance for Americans 59&frac12; to 72 who want to know if physical gold belongs in their retirement plan.</p>
     <a href="blog.html" class="hero-cta">Start With Our Free Education</a>
   </section>
 
   <!-- TRUST BAR -->
   <div class="trust-bar">
-    <p>We do things the old fashioned way — we learn it. No pressure. No sales pitch. Just honest information.</p>
+    <p>We do things the old fashioned way &mdash; we learn it. No pressure. No sales pitch. Just honest information.</p>
   </div>
 
   <!-- MAIN -->
@@ -283,7 +283,7 @@
     <div class="featured-post">
       <span class="post-tag">Inflation &amp; Your IRA</span>
       <h2>What Inflation Is Quietly Doing to Your IRA (And What You Can Do About It)</h2>
-      <p class="excerpt">Your account balance looks fine. But the purchasing power behind those dollars is shrinking every year — and most retirement accounts do nothing to protect against it. Here's the honest math, and what your options are.</p>
+      <p class="excerpt">Your account balance looks fine. But the purchasing power behind those dollars is shrinking every year &mdash; and most retirement accounts do nothing to protect against it. Here&rsquo;s the honest math, and what your options are.</p>
       <a href="post.html" class="read-more">Read the full article &rarr;</a>
     </div>
 
@@ -291,19 +291,19 @@
     <p class="section-title">Why People Come Here</p>
     <div class="value-grid">
       <div class="value-card">
-        <div class="icon">📖</div>
+        <div class="icon">&#128214;</div>
         <h3>Education First</h3>
-        <p>We explain how gold IRAs work, who they're right for, and what the process looks like — before you talk to anyone.</p>
+        <p>We explain how gold IRAs work, who they&rsquo;re right for, and what the process looks like &mdash; before you talk to anyone.</p>
       </div>
       <div class="value-card">
-        <div class="icon">🔒</div>
+        <div class="icon">&#128274;</div>
         <h3>No Pressure</h3>
         <p>Our job is to help you understand your options. You decide if and when a gold IRA makes sense for your situation.</p>
       </div>
       <div class="value-card">
-        <div class="icon">💬</div>
+        <div class="icon">&#128172;</div>
         <h3>Ask Rex Anything</h3>
-        <p>Rex is our AI retirement guide. Ask him your questions — account types, rollover rules, timelines — anytime, free.</p>
+        <p>Rex is our AI retirement guide. Ask him your questions &mdash; account types, rollover rules, timelines &mdash; anytime, free.</p>
       </div>
     </div>
 
@@ -311,7 +311,7 @@
     <div class="cta-block">
       <h2>Not Sure If a Gold IRA Is Right for You?</h2>
       <p>Rex can help you figure that out in about 5 minutes. No obligation, no sales call.</p>
-      <a href=https://securegoldirahelp-tech.github.io/securegoldirahelp/index.html class="btn" onclick="document.getElementById('rex-bubble').click(); return false;">Talk to Rex — It's Free</a>
+      <a href="#" class="btn" onclick="window.chatbase('open'); return false;">Talk to Rex &mdash; It&rsquo;s Free</a>
     </div>
 
   </main>
@@ -322,47 +322,9 @@
     <p style="margin-top:8px;">This site is for educational purposes only. Nothing here constitutes financial, tax, or legal advice.<br>Consult a qualified professional before making any investment decisions.</p>
   </footer>
 
-  <!-- REX WIDGET -->
+  <!-- CHATBASE WIDGET -->
   <script>
-  (function() {
-    var REX_URL       = <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
-    var PRIMARY_COLOR = "#C9A84C";
-    var DARK_COLOR    = "#0A1628";
-    var css = `
-      #rex-bubble { position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:${PRIMARY_COLOR};box-shadow:0 4px 18px rgba(0,0,0,.30);cursor:pointer;z-index:99999;display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s;border:none;outline:none; }
-      #rex-bubble:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(0,0,0,.38);}
-      #rex-bubble svg{width:28px;height:28px;fill:#fff;pointer-events:none;}
-      #rex-tooltip{position:fixed;bottom:95px;right:28px;background:${DARK_COLOR};color:#fff;font-family:Georgia,serif;font-size:13px;padding:7px 13px;border-radius:7px;white-space:nowrap;z-index:99998;pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity .25s,transform .25s;box-shadow:0 2px 10px rgba(0,0,0,.2);}
-      #rex-tooltip::after{content:'';position:absolute;bottom:-6px;right:20px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid ${DARK_COLOR};}
-      #rex-tooltip.visible{opacity:1;transform:translateY(0);}
-      #rex-pulse{position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:${PRIMARY_COLOR};z-index:99997;pointer-events:none;animation:rex-pulse-anim 2s ease-out infinite;}
-      #rex-badge{position:fixed;bottom:72px;right:20px;background:#e53935;color:#fff;width:18px;height:18px;border-radius:50%;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;display:flex;align-items:center;justify-content:center;z-index:100000;pointer-events:none;box-shadow:0 1px 4px rgba(0,0,0,.3);}
-      @keyframes rex-pulse-anim{0%{transform:scale(1);opacity:.5}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
-    `;
-    var s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
-    document.body.insertAdjacentHTML('beforeend',`
-      <div id="rex-pulse"></div>
-      <button id="rex-bubble" aria-label="Talk to Rex"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></button>
-      <div id="rex-tooltip">Free retirement checkup</div>
-      <div id="rex-badge">1</div>
-    `);
-    var bubble=document.getElementById('rex-bubble'),tooltip=document.getElementById('rex-tooltip'),pulse=document.getElementById('rex-pulse'),badge=document.getElementById('rex-badge'),popup=null;
-    setTimeout(function(){tooltip.classList.add('visible');setTimeout(function(){tooltip.classList.remove('visible');},5000);},2500);
-    bubble.addEventListener('mouseenter',function(){tooltip.classList.add('visible');});
-    bubble.addEventListener('mouseleave',function(){tooltip.classList.remove('visible');});
-    bubble.addEventListener('click',function(){
-      tooltip.classList.remove('visible');pulse.style.display='none';badge.style.display='none';
-      if(popup&&!popup.closed){popup.focus();return;}
-      var l=Math.round((screen.width-480)/2),t=Math.round((screen.height-640)/2);
-      popup=window.open(REX_URL,'RexIRAGuide','width=480,height=640,left='+l+',top='+t+',resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no');
-      if(!popup||popup.closed){window.open(REX_URL,'_blank');}
-    });
-  })();
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 </body>
 </html>
