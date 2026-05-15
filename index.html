@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secure Gold IRA Help &#x2014; Protect Your Retirement Savings</title>
-  <meta name="description" content="Learn how to move your 401(k), IRA, TSP, or pension into physical gold with no taxes, no penalties, and no confusion. Free educational guidance for retirement investors age 59.5+." />
+  <meta name="description" content="Educational guidance for retirement investors age 59.5+ exploring Gold IRA rollovers. Learn how direct rollovers from 401(k), IRA, TSP, and pension accounts work. No pressure, no sales pitch." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,7 +31,7 @@
     nav a { color: #ccc; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px; transition: color .15s; }
     nav a:hover { color: var(--gold); }
     .nav-cta { background: var(--gold); color: var(--navy) !important; font-weight: bold; padding: 8px 18px; border-radius: 5px; transition: background .15s !important; }
-    .nav-cta:hover { background: var(--gold-dark) !important; color: var(--navy) !important; }
+    .nav-cta:hover { background: var(--gold-dark) !important; }
 
     /* ── SECTION UTILITIES ── */
     .section-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
@@ -49,32 +49,32 @@
     .cta-group { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
     .cta-group.center { justify-content: center; }
 
-    /* ── SECTION 1: HERO ── */
+    /* ── HERO ── */
     .hero { background: linear-gradient(135deg, #07111f 0%, #0A1628 60%, #122240 100%); color: #fff; padding: 88px 24px 96px; text-align: center; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%); pointer-events: none; }
     .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); color: var(--gold); font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: .1em; text-transform: uppercase; padding: 6px 16px; border-radius: 20px; margin-bottom: 28px; }
     .hero h1 { font-size: clamp(28px, 4.5vw, 52px); max-width: 820px; margin: 0 auto 20px; line-height: 1.18; }
     .hero h1 em { font-style: normal; color: var(--gold); }
-    .hero-sub { font-size: clamp(16px, 2vw, 20px); color: #c8bfb0; max-width: 640px; margin: 0 auto 14px; line-height: 1.6; }
+    .hero-sub { font-size: clamp(16px, 2vw, 20px); color: #c8bfb0; max-width: 700px; margin: 0 auto 14px; line-height: 1.6; }
     .hero-trust { font-family: Arial, sans-serif; font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
     .hero-divider { width: 60px; height: 3px; background: var(--gold); margin: 0 auto 40px; border-radius: 2px; }
 
-    /* ── SECTION 2: WHO THIS HELPS ── */
+    /* ── WHO THIS HELPS ── */
     .who-section { background: var(--white); padding: var(--section-pad); }
     .who-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .who-list { list-style: none; margin: 24px 0 32px; }
     .who-list li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 16px; display: flex; align-items: center; gap: 12px; }
     .who-list li:last-child { border-bottom: none; }
     .who-list li::before { content: '\2713'; color: var(--gold); font-weight: bold; font-size: 15px; flex-shrink: 0; }
-    .who-closing { font-style: italic; color: var(--muted); font-size: 16px; border-left: 3px solid var(--gold); padding-left: 16px; line-height: 1.65; }
+    .who-closing { font-style: italic; color: var(--muted); font-size: 16px; border-left: 3px solid var(--gold); padding-left: 16px; line-height: 1.65; margin-bottom: 28px; }
     .who-visual { background: linear-gradient(135deg, var(--navy) 0%, #1a3050 100%); border-radius: 12px; padding: 48px 40px; color: #fff; text-align: center; }
     .who-visual .stat { margin-bottom: 32px; }
     .who-visual .stat:last-child { margin-bottom: 0; }
     .who-visual .stat-num { font-size: 42px; font-weight: bold; color: var(--gold); line-height: 1; }
-    .who-visual .stat-label { font-family: Arial, sans-serif; font-size: 13px; color: #9a9080; margin-top: 4px; text-transform: uppercase; letter-spacing: .06em; }
+    .who-visual .stat-label { font-family: Arial, sans-serif; font-size: 12px; color: #9a9080; margin-top: 6px; line-height: 1.5; }
     .who-visual .divider { width: 40px; height: 1px; background: rgba(201,168,76,0.3); margin: 24px auto; }
 
-    /* ── SECTION 3: WHY GOLD ── */
+    /* ── WHY GOLD ── */
     .why-section { background: var(--cream); padding: var(--section-pad); }
     .why-inner { max-width: 1100px; margin: 0 auto; }
     .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 24px; margin: 40px 0 40px; }
@@ -83,7 +83,7 @@
     .icon-card h3 { font-size: 17px; color: var(--navy); margin-bottom: 10px; }
     .icon-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
 
-    /* ── SECTION 4: PROCESS ── */
+    /* ── PROCESS ── */
     .process-section { background: var(--navy); color: #fff; padding: var(--section-pad); }
     .process-inner { max-width: 1100px; margin: 0 auto; }
     .process-section .section-heading { color: #fff; }
@@ -98,8 +98,9 @@
     .no-taxes-item { text-align: center; }
     .no-taxes-item .big { font-size: 22px; font-weight: bold; color: var(--gold); display: block; }
     .no-taxes-item .small { font-family: Arial, sans-serif; font-size: 12px; color: #9a9080; text-transform: uppercase; letter-spacing: .06em; margin-top: 2px; }
+    .process-note { text-align: center; font-family: Arial, sans-serif; font-size: 13px; color: #6a6a7a; margin-bottom: 36px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; }
 
-    /* ── SECTION 5: EDUCATION HUB ── */
+    /* ── EDUCATION HUB ── */
     .edu-section { background: var(--white); padding: var(--section-pad); }
     .edu-inner { max-width: 1100px; margin: 0 auto; }
     .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 40px 0 40px; }
@@ -110,18 +111,21 @@
     .blog-card p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
     .blog-card a.card-link { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; color: var(--navy); text-decoration: none; border-bottom: 2px solid var(--gold); padding-bottom: 1px; }
     .blog-card a.card-link:hover { color: var(--gold); }
+    .blog-card.upcoming { opacity: .65; }
+    .blog-card.upcoming .card-tag { color: #888; }
 
-    /* ── SECTION 6: REX ── */
+    /* ── REX SECTION ── */
     .rex-section { background: linear-gradient(135deg, var(--navy) 0%, #122240 100%); color: #fff; padding: var(--section-pad); }
     .rex-inner { max-width: 860px; margin: 0 auto; text-align: center; }
     .rex-section .section-heading { color: #fff; }
     .rex-section .section-sub { color: #c8bfb0; margin: 0 auto 36px; }
-    .rex-features { display: flex; justify-content: center; gap: 32px; margin: 0 0 40px; flex-wrap: wrap; }
+    .rex-features { display: flex; justify-content: center; gap: 32px; margin: 0 0 36px; flex-wrap: wrap; }
     .rex-feat { text-align: center; }
     .rex-feat .feat-icon { font-size: 24px; margin-bottom: 6px; }
     .rex-feat .feat-text { font-family: Arial, sans-serif; font-size: 13px; color: #9a9080; }
+    .rex-disclaimer { font-family: Arial, sans-serif; font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 20px; line-height: 1.6; max-width: 540px; margin-left: auto; margin-right: auto; }
 
-    /* ── SECTION 7: CONSULTATION ── */
+    /* ── CONSULTATION ── */
     .consult-section { background: var(--cream); padding: var(--section-pad); }
     .consult-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .consult-times { margin: 24px 0 32px; }
@@ -134,7 +138,7 @@
     .consult-visual h3 { font-size: 22px; margin-bottom: 12px; }
     .consult-visual p { color: #9a9080; font-size: 15px; line-height: 1.65; margin-bottom: 28px; }
 
-    /* ── SECTION 8: TRUST ── */
+    /* ── TRUST ── */
     .trust-section { background: var(--white); padding: var(--section-pad); border-top: 3px solid var(--gold); }
     .trust-inner { max-width: 1100px; margin: 0 auto; }
     .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; margin-top: 40px; }
@@ -142,6 +146,8 @@
     .trust-item .t-icon { font-size: 32px; margin-bottom: 12px; }
     .trust-item h4 { font-size: 15px; color: var(--navy); margin-bottom: 6px; }
     .trust-item p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .trust-cta { text-align: center; margin-top: 44px; }
+    .trust-cta p { font-size: 16px; color: var(--muted); margin-bottom: 20px; }
 
     /* ── FOOTER ── */
     footer { background: #06101e; color: #666; padding: 40px 24px 28px; font-family: Arial, sans-serif; font-size: 13px; }
@@ -166,28 +172,28 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- HEADER -->
   <header>
     <div class="header-inner">
       <a href="index.html" class="site-logo">
         Secure Gold IRA Help
-        <span>We do things the old fashion way ......we learn it</span>
+        <span>Retirement Gold Education, Explained Clearly</span>
       </a>
       <nav>
         <a href="blog.html">Education</a>
         <a href="rollover-401k-to-gold-ira.html">Rollover Guide</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
         <a href="#" class="nav-cta" onclick="window.chatbase('open'); return false;">Talk to Rex</a>
       </nav>
     </div>
   </header>
 
-  <!-- SECTION 1: HERO -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-badge">&#127881; Free Educational Guidance &nbsp;&middot;&nbsp; No Pressure &nbsp;&middot;&nbsp; No Sales Pitch</div>
     <h1>Protect Your Retirement Savings<br>Before the <em>Next Market Shock</em></h1>
-    <p class="hero-sub">Learn how to move your 401(k), IRA, TSP, or pension into physical gold &mdash; with no taxes, no penalties, and no confusion.</p>
+    <p class="hero-sub">Many retirement investors use direct rollovers to move qualified retirement funds into a Gold IRA without triggering immediate taxes or penalties &mdash; when completed properly.</p>
     <p class="hero-trust">Educational guidance for retirement investors age 59.5+ &mdash; simple, clear, and pressure-free</p>
     <div class="hero-divider"></div>
     <div class="cta-group center">
@@ -203,23 +209,25 @@
       <div>
         <p class="section-label">Who This Is For</p>
         <h2 class="section-heading">Is Your Retirement Savings at Risk?</h2>
-        <p class="section-sub">Millions of Americans are unknowingly exposed to inflation, market crashes, and dollar devaluation through their retirement accounts. Here&rsquo;s who we help:</p>
+        <p class="section-sub">Millions of Americans are unknowingly exposed to inflation, market swings, and dollar devaluation through their retirement accounts. Here&rsquo;s who we help:</p>
         <ul class="who-list">
           <li>People age 59.5+ approaching or in retirement</li>
           <li>401(k) holders from previous employers</li>
           <li>Traditional &amp; Roth IRA owners</li>
           <li>Federal employees with TSP accounts</li>
           <li>People with pensions or annuities</li>
-          <li>Retirees worried about inflation &amp; purchasing power</li>
+          <li>Retirees concerned about inflation &amp; purchasing power</li>
           <li>Investors seeking portfolio protection &amp; diversification</li>
-          <li>Anyone with $50,000+ in retirement savings</li>
+          <li>Anyone with $50,000+ in qualified retirement savings</li>
         </ul>
         <p class="who-closing">If you&rsquo;re concerned about protecting what you worked your whole life to build, you&rsquo;re in the right place.</p>
+        <br />
+        <a href="#" class="btn-gold" onclick="window.chatbase('open'); return false;">&#128172; Ask Rex a Question &mdash; Free</a>
       </div>
       <div class="who-visual">
         <div class="stat">
           <div class="stat-num">$50K+</div>
-          <div class="stat-label">Minimum portfolio we help protect</div>
+          <div class="stat-label">Common retirement account range<br>for Gold IRA conversations</div>
         </div>
         <div class="divider"></div>
         <div class="stat">
@@ -229,7 +237,7 @@
         <div class="divider"></div>
         <div class="stat">
           <div class="stat-num">$0</div>
-          <div class="stat-label">Cost to talk to Rex &amp; get guidance</div>
+          <div class="stat-label">Cost to talk to Rex &amp; get education</div>
         </div>
         <div class="divider"></div>
         <div class="stat">
@@ -255,9 +263,9 @@
           <p>Gold has historically maintained purchasing power over decades while paper currencies lose value to inflation.</p>
         </div>
         <div class="icon-card">
-          <div class="icon">&#9760;&#65039;</div>
-          <h3>Market Crash Protection</h3>
-          <p>When stock markets fall, gold has often moved independently &mdash; providing a stabilizing offset in diversified portfolios.</p>
+          <div class="icon">&#128737;&#65039;</div>
+          <h3>Market Volatility Defense</h3>
+          <p>When equity markets decline, gold has often moved independently &mdash; providing a stabilizing offset in diversified portfolios.</p>
         </div>
         <div class="icon-card">
           <div class="icon">&#128178;</div>
@@ -267,7 +275,7 @@
         <div class="icon-card">
           <div class="icon">&#9878;&#65039;</div>
           <h3>Portfolio Diversification</h3>
-          <p>Adding a physical asset that moves independently of stocks and bonds reduces overall portfolio risk.</p>
+          <p>Adding a physical asset that moves independently of stocks and bonds can reduce overall portfolio concentration risk.</p>
         </div>
       </div>
       <div class="center">
@@ -282,7 +290,7 @@
       <div class="center">
         <p class="section-label">Simple 4-Step Process</p>
         <h2 class="section-heading">How a Gold IRA Rollover Works</h2>
-        <p class="section-sub">Moving your retirement funds into physical gold is simpler than most people expect. Here&rsquo;s the basic process:</p>
+        <p class="section-sub">Moving retirement funds into a Gold IRA is simpler than most people expect when done through a proper direct rollover. Here&rsquo;s the general process:</p>
       </div>
       <div class="steps-grid">
         <div class="step-card">
@@ -292,27 +300,28 @@
         </div>
         <div class="step-card">
           <div class="step-num">2</div>
-          <h3>Transfer or Roll Over Your Existing Funds</h3>
-          <p>Move funds from your 401(k), IRA, TSP, or other account directly to the new custodian &mdash; typically tax-free and penalty-free.</p>
+          <h3>Initiate a Direct Rollover</h3>
+          <p>Request a direct rollover from your 401(k), IRA, TSP, or other qualified account. Funds move directly &mdash; you do not take personal possession.</p>
         </div>
         <div class="step-card">
           <div class="step-num">3</div>
           <h3>Select IRS-Approved Physical Gold</h3>
-          <p>Choose from IRS-approved gold coins and bars (minimum .995 purity) with your specialist&rsquo;s guidance.</p>
+          <p>Choose from IRS-approved gold coins and bars (minimum .995 purity) with guidance from your custodian&rsquo;s specialist.</p>
         </div>
         <div class="step-card">
           <div class="step-num">4</div>
           <h3>Secure Storage + Long-Term Protection</h3>
-          <p>Your metals are stored at an IRS-approved, insured depository vault on your behalf.</p>
+          <p>Your metals are held at an IRS-approved, insured depository vault on your behalf &mdash; you cannot store IRA metals at home.</p>
         </div>
       </div>
       <div class="no-taxes">
         <div class="no-taxes-inner">
-          <div class="no-taxes-item"><span class="big">No Taxes</span><span class="small">on direct rollovers</span></div>
-          <div class="no-taxes-item"><span class="big">No Penalties</span><span class="small">when done correctly</span></div>
+          <div class="no-taxes-item"><span class="big">No Immediate Taxes</span><span class="small">on proper direct rollovers</span></div>
+          <div class="no-taxes-item"><span class="big">No Penalties</span><span class="small">when rules are followed</span></div>
           <div class="no-taxes-item"><span class="big">No Surprises</span><span class="small">we explain everything first</span></div>
         </div>
       </div>
+      <p class="process-note">Tax treatment depends on individual circumstances. A properly completed direct rollover is generally not a taxable event, but outcomes vary. Consult a qualified tax advisor for guidance specific to your situation.</p>
       <div class="center">
         <a href="rollover-401k-to-gold-ira.html" class="btn-gold">See Full Gold IRA Rollover Guide</a>
       </div>
@@ -346,23 +355,23 @@
           <p>Your balance looks fine &mdash; but your purchasing power is shrinking every year. Here&rsquo;s the honest math.</p>
           <a href="post.html" class="card-link">Read the full guide &rarr;</a>
         </div>
-        <div class="blog-card">
-          <span class="card-tag">Coming Soon</span>
+        <div class="blog-card upcoming">
+          <span class="card-tag">New Guide in Progress</span>
           <h3>Does Gold Protect Against Inflation in Retirement?</h3>
           <p>A look at the historical data and what it means for retirement investors today.</p>
-          <a href="blog.html" class="card-link">View all articles &rarr;</a>
+          <a href="blog.html" class="card-link">View all guides &rarr;</a>
         </div>
-        <div class="blog-card">
-          <span class="card-tag">Coming Soon</span>
+        <div class="blog-card upcoming">
+          <span class="card-tag">New Guide in Progress</span>
           <h3>Gold IRA Rules and IRS Requirements</h3>
           <p>What the IRS requires for metals purity, storage, and custodians &mdash; before you invest a dollar.</p>
-          <a href="blog.html" class="card-link">View all articles &rarr;</a>
+          <a href="blog.html" class="card-link">View all guides &rarr;</a>
         </div>
-        <div class="blog-card">
-          <span class="card-tag">Coming Soon</span>
+        <div class="blog-card upcoming">
+          <span class="card-tag">New Guide in Progress</span>
           <h3>How to Choose a Trustworthy Gold IRA Company</h3>
           <p>Red flags to watch for, fee structures to understand, and questions to ask before you commit.</p>
-          <a href="blog.html" class="card-link">View all articles &rarr;</a>
+          <a href="blog.html" class="card-link">View all guides &rarr;</a>
         </div>
       </div>
       <div class="center">
@@ -371,20 +380,21 @@
     </div>
   </section>
 
-  <!-- SECTION 6: REX MID-PAGE -->
+  <!-- SECTION 6: REX -->
   <section class="rex-section">
     <div class="rex-inner">
       <p class="section-label center">Questions? Talk to Rex</p>
       <h2 class="section-heading center">Get Instant Answers &mdash; No Waiting, No Sales Call</h2>
-      <p class="section-sub">Rex is our AI retirement specialist. He answers common Gold IRA questions, checks your rollover eligibility, and explains next steps in plain language &mdash; available 24/7, completely free.</p>
+      <p class="section-sub">Rex is our AI retirement education specialist. He answers common Gold IRA questions, explains rollover eligibility, and walks through next steps in plain language &mdash; available 24/7, completely free.</p>
       <div class="rex-features">
         <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">Rollover eligibility</div></div>
         <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">Account type questions</div></div>
         <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">IRS rules &amp; limits</div></div>
-        <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">Tax &amp; penalty concerns</div></div>
+        <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">Tax &amp; penalty questions</div></div>
         <div class="rex-feat"><div class="feat-icon">&#9989;</div><div class="feat-text">Next steps guidance</div></div>
       </div>
       <a href="#" class="btn-gold" onclick="window.chatbase('open'); return false;">&#128172; Talk to Rex Now &mdash; It&rsquo;s Free</a>
+      <p class="rex-disclaimer">Rex provides general educational information only and does not provide financial, tax, or legal advice. Always consult a qualified professional before making investment decisions.</p>
     </div>
   </section>
 
@@ -428,7 +438,7 @@
         <div class="trust-item">
           <div class="t-icon">&#128274;</div>
           <h4>No Pressure Tactics</h4>
-          <p>We never push, rush, or use fear-based sales language. You decide, on your timeline.</p>
+          <p>We never push, rush, or use fear-based language. You decide, on your timeline.</p>
         </div>
         <div class="trust-item">
           <div class="t-icon">&#128483;</div>
@@ -438,12 +448,19 @@
         <div class="trust-item">
           <div class="t-icon">&#128181;&#128181;</div>
           <h4>Retirement Focused</h4>
-          <p>Everything on this site is built specifically for people 59.5+ with existing retirement accounts.</p>
+          <p>Everything here is built specifically for people 59.5+ with existing retirement accounts.</p>
         </div>
         <div class="trust-item">
           <div class="t-icon">&#10067;&#10067;</div>
           <h4>Rex Available 24/7</h4>
           <p>Ask questions anytime &mdash; no appointments, no waiting, no sales pitch.</p>
+        </div>
+      </div>
+      <div class="trust-cta">
+        <p>Ready to start learning? It costs nothing and takes 5 minutes.</p>
+        <div class="cta-group center">
+          <a href="#" class="btn-gold" onclick="window.chatbase('open'); return false;">&#128172; Talk to Rex &mdash; It&rsquo;s Free</a>
+          <a href="about.html" class="btn-outline">Learn About Us</a>
         </div>
       </div>
     </div>
@@ -462,8 +479,8 @@
         <a href="terms.html">Terms of Service</a>
       </div>
       <div class="footer-copy">
-        <p>&copy; 2026 Secure Gold IRA Help &nbsp;&middot;&nbsp; All educational content is for informational purposes only.</p>
-        <p style="margin-top:6px;">Nothing on this site constitutes financial, tax, or legal advice. Consult a qualified professional before making any investment decisions.</p>
+        <p>&copy; 2026 Secure Gold IRA Help &nbsp;&middot;&nbsp; All content is for educational purposes only and does not constitute financial, tax, or legal advice.</p>
+        <p style="margin-top:6px;">Consult a qualified professional before making any investment decisions. Past performance of any asset does not guarantee future results.</p>
       </div>
     </div>
   </footer>
