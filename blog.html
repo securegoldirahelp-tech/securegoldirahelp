@@ -18,8 +18,6 @@
     nav a:hover { color:var(--gold); }
     .nav-cta { background:var(--gold); color:var(--navy) !important; font-weight:bold; padding:8px 18px; border-radius:5px; }
     .nav-cta:hover { background:var(--gold-dark) !important; }
-
-    /* HERO */
     .page-hero { background:linear-gradient(135deg, #07111f 0%, var(--navy) 100%); padding:64px 24px; text-align:center; }
     .page-hero h1 { color:#fff; font-size:clamp(24px,3.5vw,40px); margin-bottom:14px; line-height:1.2; }
     .page-hero p { color:#9a9080; font-style:italic; font-size:17px; max-width:600px; margin:0 auto 32px; line-height:1.65; }
@@ -28,8 +26,6 @@
     .btn-outline { display:inline-block; background:transparent; color:var(--gold); border:2px solid var(--gold); font-family:Arial,sans-serif; font-weight:bold; font-size:15px; padding:11px 24px; border-radius:6px; text-decoration:none; transition:all .15s; }
     .btn-outline:hover { background:var(--gold); color:var(--navy); }
     .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
-
-    /* ARTICLES */
     main { max-width:1100px; margin:0 auto; padding:64px 24px 80px; }
     .section-label { font-family:Arial,sans-serif; font-size:11px; font-weight:bold; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
     .articles-header { margin-bottom:36px; }
@@ -44,26 +40,19 @@
     .post-card a.read:hover { color:var(--gold); }
     .post-card.in-progress { opacity:.65; }
     .post-card.in-progress .tag { color:#888; background:#eaeaea; }
-
-    /* REX MID SECTION */
     .rex-strip { background:linear-gradient(135deg,var(--navy) 0%,#122240 100%); color:#fff; border-radius:10px; padding:44px 48px; text-align:center; margin-bottom:56px; }
     .rex-strip h2 { font-size:clamp(20px,2.5vw,26px); margin-bottom:12px; }
     .rex-strip p { color:#9a9080; font-size:16px; margin-bottom:28px; max-width:540px; margin-left:auto; margin-right:auto; line-height:1.65; }
-
-    /* CONSULT */
-    .consult-strip { background:#fff; border:1px solid var(--border); border-left:5px solid var(--gold); border-radius:8px; padding:36px 40px; display:flex; align-items:center; gap:40px; margin-bottom:0; }
+    .consult-strip { background:#fff; border:1px solid var(--border); border-left:5px solid var(--gold); border-radius:8px; padding:36px 40px; display:flex; align-items:center; gap:40px; }
     .consult-strip .cs-text { flex:1; }
     .consult-strip h2 { font-size:21px; color:var(--navy); margin-bottom:10px; }
     .consult-strip p { font-size:16px; color:var(--muted); line-height:1.65; }
     .consult-strip .cs-cta { flex-shrink:0; }
-
-    /* FOOTER */
     footer { background:#06101e; color:#666; padding:36px 24px 24px; font-family:Arial,sans-serif; font-size:12px; }
     .footer-links { display:flex; flex-wrap:wrap; justify-content:center; gap:8px 20px; margin-bottom:16px; }
     .footer-links a { color:#888; text-decoration:none; }
     .footer-links a:hover { color:var(--gold); }
     .footer-copy { text-align:center; color:#555; font-size:12px; line-height:1.8; }
-
     @media(max-width:768px){ .consult-strip{flex-direction:column; gap:20px; text-align:center;} nav{gap:16px;} }
     @media(max-width:600px){ nav a:not(.nav-cta){display:none;} .rex-strip{padding:32px 24px;} .blog-grid{grid-template-columns:1fr;} }
   </style>
@@ -82,7 +71,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <div class="page-hero">
     <h1>Free Gold IRA Education &amp; Guides</h1>
     <p>Plain-English articles written for retirement investors age 59.5+ &mdash; no jargon, no pressure, no sales pitch.</p>
@@ -93,8 +81,6 @@
   </div>
 
   <main>
-
-    <!-- ARTICLES -->
     <div class="articles-header">
       <p class="section-label">Educational Resources</p>
       <h2>Popular Gold IRA Guides</h2>
@@ -119,11 +105,11 @@
         <p>Your balance looks fine &mdash; but your purchasing power is shrinking every year. Here&rsquo;s the honest math and what your options are.</p>
         <a href="post.html" class="read">Read the full guide &rarr;</a>
       </div>
-      <div class="post-card in-progress">
-        <span class="tag">New Guide in Progress</span>
+      <div class="post-card">
+        <span class="tag">Inflation &amp; Retirement</span>
         <h2>Does Gold Protect Against Inflation in Retirement?</h2>
-        <p>A look at the historical data on gold&rsquo;s purchasing power and what it means for retirement investors today.</p>
-        <a href="#" class="read">New guide in progress</a>
+        <p>The historical data, the honest caveats, and how a Gold IRA may fit into a diversified retirement strategy as a partial inflation hedge.</p>
+        <a href="does-gold-protect-against-inflation.html" class="read">Read the full guide &rarr;</a>
       </div>
       <div class="post-card in-progress">
         <span class="tag">New Guide in Progress</span>
@@ -139,14 +125,12 @@
       </div>
     </div>
 
-    <!-- REX MID-PAGE -->
     <div class="rex-strip">
       <h2>&#128172; Questions? Talk to Rex &mdash; Instant Answers, No Wait</h2>
       <p>Rex is our free AI retirement education specialist. Ask about your specific account type, rollover eligibility, IRS rules, or any Gold IRA question &mdash; 24/7, no appointment needed.</p>
       <a href="#" class="btn-gold" onclick="window.chatbase('open'); return false;">Talk to Rex Now &mdash; It&rsquo;s Free</a>
     </div>
 
-    <!-- CONSULTATION -->
     <div class="consult-strip">
       <div class="cs-text">
         <h2>Want Personalized Guidance?</h2>
@@ -156,7 +140,6 @@
         <a href="https://calendly.com/securegoldirahelp/30min" target="_blank" rel="noopener" class="btn-gold">Book Free Consultation</a>
       </div>
     </div>
-
   </main>
 
   <footer>
@@ -171,11 +154,10 @@
     </div>
     <div class="footer-copy">
       <p>&copy; 2026 Secure Gold IRA Help &nbsp;&middot;&nbsp; All content is for educational purposes only and does not constitute financial, tax, or legal advice.</p>
-      <p style="margin-top:6px;">Consult a qualified professional before making any investment decisions.</p>
+      <p style="margin-top:6px;">Consult a qualified professional before making any investment decisions. Past performance does not guarantee future results.</p>
     </div>
   </footer>
 
-  <!-- CHATBASE WIDGET -->
   <script>
   (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Ny8q_efGSoydDW9Z9rHdP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
